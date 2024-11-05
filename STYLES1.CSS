@@ -1,0 +1,172 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: black; /* Set background to black */
+    color: white; /* Set text color to white for contrast */
+}
+
+.landing {
+    background: url("PNG1.jpg") no-repeat center center;
+    background-size: cover;
+    font-family: 'Fira Sans', sans-serif;
+    min-height: 100vh;
+}
+
+.navbar {
+    padding: 30px;
+    display: flex;
+    justify-content: space-between; /* Space between profile icon and links */
+    align-items: center;
+    position: relative;
+}
+
+.nav-links {
+    color: white;
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-left: auto; /* Pushes the Team link to the right */
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: rgb(247, 244, 244);
+    padding: 0 15px;
+}
+
+.profile-icon {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}
+
+.profile-icon img {
+    width: 100px;
+    height: 100px;
+}
+
+.hero {
+    text-align: center;
+    padding-top: 15%;
+    color: #f9f6f6;
+}
+
+.hero h1 {
+    font-family: 'Kanit', sans-serif;
+    font-size: 5rem; /* Adjust as needed */
+    font-weight: 800;
+    color: #f1f1f1;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.6);
+}
+
+.hero h2 {
+    font-family: 'Fira Sans', sans-serif;
+    font-size: 2rem; /* Adjust as needed */
+    font-weight: 400;
+    color: #ffc107;
+    margin-top: 10px;
+    text-shadow: 1px 1px 6px rgba(0, 0, 0, 0.3);
+}
+
+.content {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #e0e0e0;
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+
+.cta-button {
+    background-color: #ffc107;
+    color: black;
+    border: none;
+    padding: 15px 20px;
+    font-size: 1.2rem;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.cta-button a {
+    text-decoration: none;
+    color: #1b4941;
+    font-weight: bold;
+}
+
+.cta-button:hover {
+    background-color: #e0a106;
+    transform: translateY(-5px);
+}
+
+.about {
+    padding: 50px;
+    background-color: black; /* Set background of about section to black */
+    color: #e0e0e0; /* Text color for contrast */
+    text-align: center;
+}
+
+.about h2 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+.about h3 {
+    font-size: 2.5rem;
+    margin: 20px 0;
+    color: #ffc107; /* Highlight color for subheading */
+}
+
+.about p {
+    font-size: 1.2rem;
+    margin: 10px 0;
+}
+
+/* Fade-in and slide-up animation for hero content */
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Apply animation to elements */
+.hero h1 {
+    animation: fadeInUp 1s ease-out forwards;
+}
+
+.hero h2 {
+    animation: fadeInUp 1.5s ease-out forwards;
+}
+
+.content p {
+    animation: fadeInUp 2s ease-out forwards;
+}
+
+.profile-icon img {
+    animation: scaleUp 1s ease-out forwards;
+    transition: transform 0.3s ease;
+}
+
+.profile-icon img:hover {
+    transform: scale(1.1); /* Slightly enlarge on hover */
+}
+
+/* Scale-up animation for profile icon */
+@keyframes scaleUp {
+    0% {
+        transform: scale(0.8);
+        opacity: 0;
+    }
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}

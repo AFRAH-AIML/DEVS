@@ -1,0 +1,119 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f7f7f7;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-image: url(bg.png);
+}
+
+.events-page {
+    text-align: center;
+    max-width: 600px;
+    width: 100%;
+}
+
+h1 {
+    font-size: 2em;
+    margin-bottom: 20px;
+    color: #ffffff;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 1);
+}
+
+.events-container {
+    display: flex;
+    overflow-x: auto;
+    padding: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    gap: 10px;
+    scroll-behavior: smooth;
+}
+
+.event-card {
+    background-color: #000000;
+    border: 1px solid #ffffff;
+    border-radius: 8px;
+    width: 200px;
+    flex-shrink: 0;
+    padding: 15px;
+    text-align: center;
+    -webkit-text-fill-color: #f7f7f7;
+    transition: transform 0.3s ease;
+}
+
+.event-card:hover {
+    transform: translateY(-5px);
+}
+
+.event-image img {
+    width: 100%;
+    height: 150px;
+    border-radius: 8px;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.event-card:hover .event-image img {
+    transform: scale(1.5);
+}
+
+.register-btn {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 8px 15px;
+    font-size: 1em;
+    color: #7d058b;
+    background-color: #8d078f;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+.organizer-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+.organizer {
+    width: 220px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    padding: 20px;
+    transition: transform 0.3s ease;
+}
+.organizer:hover {
+    transform: translateY(-10px);
+}
+
+.organizer img {
+    width: 20%;
+    height: 20px;
+    border-radius: 8px 8px 0 0;
+}
+
+.organizer h2 {
+    margin-top: 15px;
+    font-size: 1.2rem;
+    color: #333;
+}
+
+.organizer p {
+    margin-top: 8px;
+    color: #777;
+    font-size: 1rem;
+}
+
+.register-btn:hover {
+    background-color: #3d0139;
+}
